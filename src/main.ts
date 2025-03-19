@@ -1,4 +1,5 @@
-const express = require("express");
+import express from 'express'; 
+import { Request, Response } from 'express'; 
 const app = express();
 const port = 3000;
 
@@ -26,8 +27,8 @@ app.get("/posts/:postId", (request, response) => {
   console.log(request.params);
   // 获取内容 ID
   const { postId } = request.params;
-  // 查找具体内容
-  const posts = data.filter((item) => item.id == postId);
+  // 查找具体内容 
+const posts = data.filter(item => item.id == parseInt(postId, 10)); 
   // 作出响应
   response.send(posts[0]);
 });
