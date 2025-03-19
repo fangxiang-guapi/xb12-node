@@ -1,15 +1,14 @@
 {
-  "name": "xb2-node", 
-"version": "1.0.0", 
-"description": "《小白的开发之路》", 
-"author": "wanghao <wanghao@ninghao.net>" ,
+  "name": "xb2-node",
+  "version": "1.0.0",
+  "description": "《小白的开发之路》",
+  "author": "wanghao <wanghao@ninghao.net>",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-
-  "license": "ISC"
-
-
-  
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1"
+  }
 }
